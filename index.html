@@ -1,0 +1,313 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="IT運用、セキュリティ、業務自動化に関する個人開発と学習のポートフォリオです。">
+  <title>IT Engineering Portfolio</title>
+  <style>
+    :root {
+      --navy: #101d33;
+      --blue: #3769a8;
+      --text: #263449;
+      --muted: #65748a;
+      --bg: #f5f7fb;
+      --line: #e0e6ef;
+      --white: #ffffff;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont,
+        "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.8;
+    }
+
+    a { color: var(--blue); }
+
+    .container {
+      width: min(1040px, 90%);
+      margin: 0 auto;
+    }
+
+    header {
+      background: var(--navy);
+      color: var(--white);
+    }
+
+    nav {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo {
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: .08em;
+    }
+
+    nav a {
+      color: #e1eaf7;
+      text-decoration: none;
+      margin-left: 18px;
+      font-size: 13px;
+    }
+
+    .hero {
+      background: var(--navy);
+      color: var(--white);
+      padding: 76px 0 90px;
+    }
+
+    .eyebrow {
+      color: #a9cdfb;
+      font-size: 12px;
+      letter-spacing: .16em;
+      font-weight: 700;
+    }
+
+    h1 {
+      max-width: 720px;
+      font-size: clamp(32px, 5vw, 52px);
+      line-height: 1.35;
+      margin: 20px 0;
+    }
+
+    .hero p {
+      max-width: 650px;
+      color: #d1dbea;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 28px;
+    }
+
+    .tag {
+      border: 1px solid #526782;
+      border-radius: 6px;
+      padding: 5px 12px;
+      color: #e1eaf7;
+      font-size: 12px;
+    }
+
+    section { padding: 64px 0; }
+
+    .section-label {
+      color: var(--blue);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .15em;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin: 6px 0 24px;
+    }
+
+    .intro {
+      max-width: 720px;
+      color: var(--muted);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 24px;
+    }
+
+    .card h3 { margin-top: 0; }
+
+    .card p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .pill {
+      display: inline-block;
+      background: #edf3fb;
+      color: #315a8b;
+      border-radius: 5px;
+      padding: 3px 9px;
+      font-size: 11px;
+      margin: 3px 4px 0 0;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .skill {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      padding: 9px 14px;
+      font-size: 14px;
+    }
+
+    .notice {
+      background: #edf3fb;
+      border-left: 4px solid var(--blue);
+      padding: 16px;
+      font-size: 13px;
+    }
+
+    footer {
+      background: var(--navy);
+      color: #d1dbea;
+      padding: 28px 0;
+      font-size: 12px;
+    }
+
+    footer a { color: #d1dbea; }
+
+    @media (max-width: 650px) {
+      nav { align-items: flex-start; padding: 18px 0; }
+      nav a { margin-left: 10px; }
+      .grid { grid-template-columns: 1fr; }
+      .hero { padding: 54px 0 64px; }
+      section { padding: 48px 0; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <div class="logo">IT / PORTFOLIO</div>
+      <div>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div class="container">
+        <div class="eyebrow">IT ENGINEERING PORTFOLIO</div>
+        <h1>日々の業務を、<br>もっとシンプルに。</h1>
+        <p>
+          IT運用・セキュリティ・業務自動化をテーマに、
+          学習内容や個人開発の取り組みを紹介するポートフォリオです。
+        </p>
+        <div class="tags">
+          <span class="tag">IT Operations</span>
+          <span class="tag">Security</span>
+          <span class="tag">Automation</span>
+          <span class="tag">Google Apps Script</span>
+        </div>
+      </div>
+    </div>
+
+    <section id="about">
+      <div class="container">
+        <div class="section-label">ABOUT</div>
+        <h2>このサイトについて</h2>
+        <p class="intro">
+          IT運用やセキュリティに関する知識を深めながら、
+          日常業務の効率化につながるツールの開発に取り組んでいます。
+          このサイトでは、個人開発の内容、技術的な工夫、
+          学習の記録を紹介します。
+        </p>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <div class="section-label">PROJECTS</div>
+        <h2>制作・学習プロジェクト</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>広告レポート自動化ツール</h3>
+            <p>
+              CSVデータを検証してスプレッドシートに取り込み、
+              重複防止やKPI集計、レポート更新を行う個人開発プロジェクトです。
+            </p>
+            <span class="pill">Google Apps Script</span>
+            <span class="pill">JavaScript</span>
+            <span class="pill">CSV</span>
+            <p>
+              現在はサンプルデータで動作確認を実施。
+              実際の広告データへの対応は今後の課題です。
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>IT運用・自動化の学習</h3>
+            <p>
+              ログの調査、データの検証、定型作業の効率化など、
+              IT運用で活用できる技術を学習・検証しています。
+            </p>
+            <span class="pill">Scripting</span>
+            <span class="pill">Data Validation</span>
+            <span class="pill">Automation</span>
+            <p>
+              ※ 公開できる成果や検証内容に合わせて、随時更新します。
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <div class="section-label">SKILLS & LEARNING</div>
+        <h2>技術・学習分野</h2>
+        <p class="intro">
+          実際に使用した技術や、学習中の内容を区別して記載します。
+        </p>
+        <div class="skills">
+          <span class="skill">Google Apps Script</span>
+          <span class="skill">JavaScript</span>
+          <span class="skill">CSV Processing</span>
+          <span class="skill">IT Operations</span>
+          <span class="skill">Security Operations</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="privacy">
+      <div class="container">
+        <div class="section-label">INFORMATION</div>
+        <h2>プライバシーについて</h2>
+        <div class="notice">
+          このサイトは個人のポートフォリオです。
+          現時点では、サイト上に入力フォームやアクセス解析機能を設けていません。
+          外部サービスの利用や情報収集機能を追加する場合は、
+          実際の運用内容に合わせてこの案内を更新します。
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>IT Engineering Portfolio</p>
+      <p>個人開発・学習の記録を紹介するサイトです。</p>
+      <p>© 2026 IT Portfolio</p>
+    </div>
+  </footer>
+</body>
+</html>
